@@ -27,7 +27,7 @@ $(document).ready(function() {
             dataType:"json",
             success:function() {
                 console.log('success');
-                $('#formBlock').hide();
+                $('#someForm').hide();
                 $('#thankyouBlock').show();
             }
 
