@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+  $('#thankyouBlock').hide();
+
     $('#someForm').on('submit', function(e) {
         e.preventDefault();
 
@@ -15,7 +17,7 @@ $(document).ready(function() {
 
         //send to formspree
         $.ajax({
-            url:'https://formspree.io/rogelio.vg@gmail.com',
+            url:'https://formspree.io/rogelio.vg@icloud.com',
             method:'POST',
             data:{
                 name:name,
