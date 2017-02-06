@@ -4,6 +4,8 @@
 	<title>First Form</title>
 	<meta charset = "UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery.js"></script>
+
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -34,12 +36,15 @@
 	<h2> Welcome to The Jammer </h2>
 
 <span class="content">
-	<form action="https://formspree.io/rogelio.vg@icloud.com"
+	<form id="someForm" action="https://formspree.io/rogelio.vg@icloud.com"
       method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
+    <input id="name" type="text" name="name">
+    <input id="email" type="email" name="_replyto">
+		<input id="comments" type="text" name="comments">
     <input type="submit" value="Send">
 </form>
+
+
 
 </span>
 
