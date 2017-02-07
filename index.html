@@ -3,26 +3,28 @@
 <head>
 	<title>First Form</title>
 	<meta charset = "UTF-8"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 	<!-- Optional theme -->
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-	<table style="width:100px">
+	<table class"nav">
   <tr>
-    <th class="logo"><img src="https://2e075e5f-a-62cb3a1a-s-sites.googlegroups.com/site/wadjan17/home/activities/lab-1-the-jammer-login-and-registration/jammer_logo.png?attachauth=ANoY7cqEqIMaU8rc0v1M6XQhpjescA4JlejDUjR6ew4NbHn9ljkSew43DGFN5e49jmWIwpn2xmEvXM-8hiT8RFr6XWQYCXiUYd2qzyh_sgcL0QLChmqP9iIyDqpEyTaqAIdA8v34CGwgoqw2wImnCP7JArixL3XGbrXr4Rtn1Ayrq04idzhJyvxiq97FwhqfQmVSFGZK4Vd0Bh_sSvzR9OhbQYbkTKo2gxW4Wt74VWk2qIlhFZXBzqafj8Jc3pnYdEtvMoN4KsiGBG_rZXLtiqmYUOa2MLet-vcRNo7CU5yYHxg7nHRSrB4%3D&attredirects=0" alt="Mountain View" style="width:50px;height:50px;"></th>
-
-    <th style="color: navy;">
+    <th>
+			<span class="logo">
+				<img src="assets/robin-icon-white.png" alt="Robin" class="menu-logo">
+			</span>
+		</th>
+    <th>
 			<ul id="menu" >
 		  	<li>Home</li>
 		  	<li>About Site</li>
@@ -34,29 +36,61 @@
   </tr>
 	</table>
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+<div id="top-container">
+	<table>
+		<tr>
+			<th class="first-column">
+				<span class="slogan">
 
-	<h2> Welcome to The Jammer with Ajax 2.0 </h2>
+					<h1>
+						Teaching money the right way.
+					</h1>
+					<br>
+					<p class="product-description">
+						Robin is a mobile piggybank for kids with a focus on their financial education.
+					</p>
+					<br>
+				</span>
 
-<span class="content">
-	<form id="someForm" action="https://formspree.io/rogelio.vg@icloud.com"
-      method="POST">
-    <input id="name" type="text" name="name">
-    <input id="email" type="email" name="_replyto">
-		<input id="comments" type="text" name="comments">
-    <input type="submit" value="Send">
-</form>
-<div id="thankyouBlock">
-	Thank you
+				<form class="subscription-form" action="https://formspree.io/rogelio.vg@icloud.com"
+			      method="POST">
+			    <input id="email form-control" placeholder=" Email" type="email" name="_replyto">
+			    <input class="btn btn-info round" type="submit" value="Subscribe">
+				</form>
+				<br>
+
+				<span>
+
+
+							<a href="https://itunes.apple.com/mx/app/robin-kids-financial-sidekick/id1167266233?l=en&mt=8">
+								<img class="appstore-btn" src="assets/appstore.png">
+							</a>
+
+							<a href="https://itunes.apple.com/mx/app/robin-kids-financial-sidekick/id1167266233?l=en&mt=8">
+								<img class="appstore-btn" src="assets/playstore.png">
+							</a>
+
+
+				</span>
+
+			</th>
+			<th>
+				<span class="product-showcase">
+					<img class= "account-image" src="assets/account-iphone-white.png">
+				</span>
+			</th>
+		</tr>
+	</table>
+
+	<span id="thankyouBlock">
+		Thank you
+	</span>
+</div>
+<div id="second-container">
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </div>
 
-
-
-</span>
 
 </body>

@@ -1,0 +1,99 @@
+table .nav {
+  position: fixed;
+}
+
+.menu-logo {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+}
+
+.account-image {
+  width: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: block;
+}
+
+ul#menu {
+	opacity: 1;
+	font-size: 1em;
+  color: white;
+	list-style: none;
+	overflow: hidden;
+}
+ul#menu li {
+	float:left;
+	padding: 20px;
+}
+
+ul#menu li:hover, ul#menu li.selected{
+	color: navy;
+	cursor: pointer;
+}
+
+.first-column{
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.slogan {
+  color: white;
+}
+.product-description{
+  font-size: 1.5em;
+}
+h1{
+  font-size: 4em;
+}
+
+input{
+  opacity: 1;
+  font-size: 1em;
+  border-radius: 7px;
+  margin-right: 5px;
+  border-style:solid;
+  border-color: lightgray;
+
+}
+.appstore-btn {
+  width: 220px;
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+#top-container{
+  padding-bottom: 100px;
+  overflow: hidden;
+  height: 30;
+  display: table;
+}
+
+.btn-info, .round {
+	border-radius: 10px;
+  background-color: #0DC0FF;
+}
+
+.btn-info:hover {
+  background-color: #0D91FF;
+  border-color: white;
+}
+
+#second-container {
+  background-color: white;
+  position: relative;
+  display: block;
+  z-index: 2;
+  overflow: hidden;
+}
+
+body {
+  background: url('https://firebasestorage.googleapis.com/v0/b/firebase-robinbank.appspot.com/o/orange-bg.png?alt=media&token=5d26055e-d0aa-4067-9fe8-858c716187d4') no-repeat center left;
+  font-family: sans-serif;
+  font-weight: 100;
+  z-index: 0;
+}
