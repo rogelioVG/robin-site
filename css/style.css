@@ -10,6 +10,8 @@
     padding: 10px;
   }
 
+
+
   .account-image {
     width: 250px;
     margin-left: 50px;
@@ -71,14 +73,14 @@
     display: table-cell;
     text-align: left;
     padding-left: 70px;
-    padding-right: 10px;
+    padding-right: 0px;
     padding-top: 65px;
     width: 1000;
   }
 
   .product-showcase{
     display: table-cell;
-    padding-left: 70px;
+    padding-left: 7px;
     padding-right: 100px;
   }
   .slogan {
@@ -154,6 +156,16 @@
     height: 30;
     display: table;
   }
+  #terms-container{
+    padding-bottom: 40px;
+    overflow: hidden;
+    height: 30;
+    display: block;
+    z-index: 2;
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
   #task-container {
     background-color: #5A37FF;
@@ -163,10 +175,10 @@
     overflow: hidden;
 
     background: #5A37FF; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #4E09D3 , #5A37FF); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #4E09D3 , #5A37FF); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #4E09D3 , #5A37FF); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #4E09D3 , #5A37FF); /* Standard syntax */
+    background: -webkit-linear-gradient(top, #4E09D3 , #5A37FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #4E09D3 , #5A37FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #4E09D3 , #5A37FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, #4E09D3 , #5A37FF); /* Standard syntax */
   }
 
   #save-container {
@@ -177,10 +189,10 @@
     overflow: hidden;
 
     background: #18D37E; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #1EC158 , #18D37E); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #1EC158 , #18D37E); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #1EC158 , #18D37E); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #1EC158 , #00E682); /* Standard syntax */
+    background: -webkit-linear-gradient(top, #1EC158 , #18D37E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #1EC158 , #18D37E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #1EC158 , #18D37E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, #1EC158 , #00E682); /* Standard syntax */
   }
 
   #shop-container {
@@ -191,10 +203,10 @@
     overflow: hidden;
 
     background: #0DC0FF; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #0DC0FF , #0D88F7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #0DC0FF , #0D88F7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #0DC0FF , #0D88F7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #0DC0FF , #0D88F7); /* Standard syntax */
+    background: -webkit-linear-gradient(top, #0D88F7 , #0DC0FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #0D88F7 , #0DC0FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #0D88F7 , #0DC0FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, #0D88F7 , #0DC0FF); /* Standard syntax */
   }
 
   #press-container {
@@ -220,8 +232,13 @@
   }
 
   body {
-    background: url('../assets/gradient-bg.png') fixed center left;
     font-family: sans-serif;
     font-weight: 100;
     z-index: 0;
+
+    background: #EF5333; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #EF5333 , #FB2C55); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #EF5333 , #FB2C55); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #EF5333 , #FB2C55); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #EF5333 , #FB2C55); /* Standard syntax */
   }

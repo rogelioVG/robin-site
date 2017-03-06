@@ -20,16 +20,18 @@
 	<table class="nav">
   <tr>
     <th>
-			<span class="logo as">
-				<img src="assets/robin-logo-white.png" alt="Robin" class="menu-logo">
+			<span class="logo">
+				<img onclick="location.href='index.html';"src="assets/robin-logo-white.png" alt="Robin" class="menu-logo">
 			</span>
 		</th>
     <th>
 			<ul id="menu">
-				<li><input class="get-robin btn btn-info round white-button" type="submit" value="Get Robin"></li>
+				<li><input onclick="location.href='https://itunes.apple.com/mx/app/robin-kids-financial-sidekick/id1167266233?l=en&mt=8'" class="get-robin btn btn-info round white-button" type="button" value="Get Robin"></li>
 		  	<li onclick="location.href='https://medium.com/robinapp';">Blog</li>
-		  	<li>FAQ</li>
-		  	<li>Contact</li>
+		  	<!--
+				<li>FAQ</li>
+				-->
+		  	<li onclick="location.href='contact.html';">Contact</li>
 
 			</ul>
 	 	</th>
@@ -52,10 +54,9 @@
 					<br>
 				</span>
 
-				<form class="subscription-form" action="https://formspree.io/rogelio.vg@icloud.com"
-			      method="POST">
+				<form class="subscription-form" 	>
 			    <input id="email form-control" placeholder=" Email" type="email" name="_replyto">
-			    <input class="btn btn-info round" type="submit" value="Subscribe">
+			    <input class="sub-button btn btn-info round" type="submit" value="Subscribe">
 				</form>
 				<br>
 				<span>
@@ -205,6 +206,17 @@
 				$(".get-robin").removeClass("orange-button");
 			}
     });
+
+		$(".sub-button").on("click", function(){
+			var $email = $("#email").val();
+			$.ajax({
+		    url: "https://formspree.io/rogelio.vg@icloud.com",
+		    method: "POST",
+		    data: {subscriber: $email},
+		    dataType: "json"
+			});
+		})
+
   });
 </script>
 
