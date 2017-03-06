@@ -1,99 +1,227 @@
-table .nav {
-  position: fixed;
-}
+  .nav {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
 
-.menu-logo {
-  width: 70px;
-  height: 70px;
-  padding: 10px;
-}
 
-.account-image {
-  width: 300px;
-  margin-left: 50px;
-  margin-right: 50px;
-  display: block;
-}
+  .menu-logo {
+    height: 70px;
+    padding: 10px;
+  }
 
-ul#menu {
-	opacity: 1;
-	font-size: 1em;
-  color: white;
-	list-style: none;
-	overflow: hidden;
-}
-ul#menu li {
-	float:left;
-	padding: 20px;
-}
+  .account-image {
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-right: 50px;
+    display: block;
+  }
 
-ul#menu li:hover, ul#menu li.selected{
-	color: navy;
-	cursor: pointer;
-}
+  .left-iphone-image {
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 50px;
+    display: block;
+  }
+  .right-iphone-image {
+    width: 250px;
+    margin-right: 150px;
+    margin-top: 50px;
+    display: block;
+  }
 
-.first-column{
-  vertical-align: middle;
-  display: table-cell;
-  text-align: left;
-  padding-left: 30px;
-}
+  .social-image {
+    width: 50px;
+    margin: 10px;
+  }
 
-.slogan {
-  color: white;
-}
-.product-description{
-  font-size: 1.5em;
-}
-h1{
-  font-size: 4em;
-}
+  ul#menu {
+  	opacity: 1;
+  	font-size: 1em;
+    color: white;
+  	list-style: none;
+  	overflow: hidden;
+  }
 
-input{
-  opacity: 1;
-  font-size: 1em;
-  border-radius: 7px;
-  margin-right: 5px;
-  border-style:solid;
-  border-color: lightgray;
+  ul#menu li {
+    float:right;
+  	padding: 20px;
+  }
 
-}
-.appstore-btn {
-  width: 220px;
-  display: block;
-  float: left;
-  margin-bottom: 20px;
-  margin-right: 10px;
-}
+  ul#menu li:hover, ul#menu li.selected{
+  	color: navy;
+  	cursor: pointer;
+  }
 
-#top-container{
-  padding-bottom: 100px;
-  overflow: hidden;
-  height: 30;
-  display: table;
-}
+  .detail-column{
+    vertical-align: top;
+    display: table-cell;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 65px;
+    width: 1000;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .first-column{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 10px;
+    padding-top: 65px;
+    width: 1000;
+  }
 
-.btn-info, .round {
-	border-radius: 10px;
-  background-color: #0DC0FF;
-}
+  .product-showcase{
+    display: table-cell;
+    padding-left: 70px;
+    padding-right: 100px;
+  }
+  .slogan {
+    color: white;
+  }
+  .product-description{
+    font-size: 1.5em;
+  }
+  h1{
+    font-size: 4em;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+  }
 
-.btn-info:hover {
-  background-color: #0D91FF;
-  border-color: white;
-}
+  input{
+    opacity: 1;
+    font-size: 1em;
+    border-radius: 7px;
+    margin-right: 5px;
+    border-style:solid;
+    border-color: lightgray;
 
-#second-container {
-  background-color: white;
-  position: relative;
-  display: block;
-  z-index: 2;
-  overflow: hidden;
-}
+  }
+  .appstore-btn {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+  }
+  .playstore-btn {
+    width: 200px;
+    float: left;
+    margin-right: 5px;
+  }
 
-body {
-  background: url('https://firebasestorage.googleapis.com/v0/b/firebase-robinbank.appspot.com/o/orange-bg.png?alt=media&token=5d26055e-d0aa-4067-9fe8-858c716187d4') no-repeat center left;
-  font-family: sans-serif;
-  font-weight: 100;
-  z-index: 0;
-}
+  .press-image {
+    width: 150px;
+    float: left;
+    margin: 45px;
+  }
+
+
+    .btn-info, .round {
+    	border-radius: 10px;
+      background-color: #0DC0FF;
+    }
+
+    .btn-info:hover {
+      background-color: #0D91FF;
+      border-color: white;
+    }
+
+    .white-button{
+      background-color: white;
+      border: 0;
+      border-radius: 25px;
+      color: navy;
+    }
+
+    .orange-button {
+      background-color: #EF5333;
+      border: 0;
+      border-radius: 25px;
+      color: white;
+    }
+
+  #top-container{
+    padding-bottom: 40px;
+    overflow: hidden;
+    height: 30;
+    display: table;
+  }
+
+  #task-container {
+    background-color: #5A37FF;
+    position: relative;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+
+    background: #5A37FF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #4E09D3 , #5A37FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #4E09D3 , #5A37FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #4E09D3 , #5A37FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #4E09D3 , #5A37FF); /* Standard syntax */
+  }
+
+  #save-container {
+    background-color: #18D37E;
+    position: relative;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+
+    background: #18D37E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #1EC158 , #18D37E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #1EC158 , #18D37E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #1EC158 , #18D37E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #1EC158 , #00E682); /* Standard syntax */
+  }
+
+  #shop-container {
+    background-color: #0DC0FF;
+    position: relative;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+
+    background: #0DC0FF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #0DC0FF , #0D88F7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0DC0FF , #0D88F7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0DC0FF , #0D88F7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0DC0FF , #0D88F7); /* Standard syntax */
+  }
+
+  #press-container {
+    background-color: white;
+    position: relative;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  #bottom-container {
+    background-color: #21252B;
+    position: relative;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+    color: white;
+  }
+
+
+  .social {
+    color: white;
+  }
+
+  body {
+    background: url('../assets/gradient-bg.png') fixed center left;
+    font-family: sans-serif;
+    font-weight: 100;
+    z-index: 0;
+  }
