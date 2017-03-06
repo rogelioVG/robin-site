@@ -214,6 +214,12 @@
 		    method: "POST",
 		    data: {subscriber: $email},
 		    dataType: "json"
+				success:{
+					console.log("submitted :)");
+				},
+				error:{
+					console.log("not submitted :(");
+				}
 			});
 		})
 
