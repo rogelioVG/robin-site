@@ -207,26 +207,20 @@
 			}
     });
 
-		$.ajax({
-    url: "https://formspree.io/rogelio.vg@icloud.com", 
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
-		});
+		// $.ajax({
+    // url: "https://formspree.io/rogelio.vg@icloud.com",
+    // method: "POST",
+    // data: {message: "hello!"},
+    // dataType: "json"
+		// });
 
 		$(".sub-button").on("click", function(){
 			var $email = $("#email").val();
 			$.ajax({
-		    url: "https://formspree.io/rogelio.vg@icloud.com",
-		    method: "POST",
-		    data: {subscriber: $email},
-		    dataType: "json",
-				success: function(data){
-					console.log("submitted :)");
-				},
-				error: function(data){
-					console.log("not submitted :(");
-				}
+	    url: "https://formspree.io/rogelio.vg@icloud.com",
+	    method: "POST",
+	    data: {message: "hello!"},
+	    dataType: "json"
 			});
 		})
 
