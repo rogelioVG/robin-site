@@ -217,6 +217,7 @@
 		$(".sub-button").on("click", function(){
 			console.log("ajax call")
 			var $email = $("#email").val();
+			console.log($email)
 			$.ajax({
 	    url: "https://formspree.io/rogelio.vg@icloud.com",
 	    method: "POST",
