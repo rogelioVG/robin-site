@@ -55,7 +55,7 @@
 				</span>
 
 				<form class="subscription-form">
-			    <input id="email form-control" placeholder="Email" type="email" name="_replyto">
+			    <input id="email form-control" class="email-field" placeholder="Email" type="email" name="_replyto">
 			    <input class="sub-button btn btn-info round" type="button" value="Subscribe">
 				</form>
 				<br>
@@ -216,7 +216,7 @@
 
 		$(".sub-button").on("click", function(){
 			console.log("ajax call")
-			var $email = $("#email").val();
+			var $email = $(".email-field").val();
 			console.log($email)
 			$.ajax({
 	    url: "https://formspree.io/rogelio.vg@icloud.com",
