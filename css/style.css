@@ -8,6 +8,7 @@
   .menu-logo {
     height: 70px;
     padding: 10px;
+    padding-left: 45px;
   }
 
 
@@ -151,15 +152,15 @@
     }
 
   #top-container{
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     overflow: hidden;
-    height: 85%;
     display: table;
+    min-height: 95vh;
   }
+
   #terms-container{
     padding-bottom: 40px;
     overflow: hidden;
-    height: 30;
     display: block;
     z-index: 2;
     background-color: white;
