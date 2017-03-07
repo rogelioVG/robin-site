@@ -4,14 +4,11 @@
     z-index: 3;
   }
 
-
   .menu-logo {
     height: 70px;
     padding: 10px;
     padding-left: 45px;
   }
-
-
 
   .account-image {
     width: 250px;
@@ -69,6 +66,7 @@
     font-size: 1.5em;
     font-weight: 500;
   }
+  
   .first-column{
     vertical-align: middle;
     display: table-cell;
