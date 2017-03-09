@@ -54,9 +54,11 @@
 					<br>
 				</span>
 
-				<form class="subscription-form">
+				<form class="subscription-form" onsubmit="return funcion1(event);">
 			    <input id="email form-control" class="email-field" placeholder="Email" type="email" name="_replyto">
-			    <input class="sub-button btn btn-info round" type="button" value="Subscribe">
+
+					<!-- Create a custom button object without the "input" tag -->
+					<input class="sub-button btn btn-info round" type="button" value="Subscribe">
 					<p class="thanks">
 						Thanks! We'll send you more info shortly 😃
 					</p>
@@ -194,7 +196,16 @@
 
 
 <script type="text/javascript">
+
+function funcion1(event){
+
+	event.preventDefault();
+	ajaxEmail();
+}
+
 	$(document).ready(function(){
+		//prevent default
+
 		$(".thanks").hide()
     $(window).scroll(function() { // check if scroll event happened
       if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
@@ -223,17 +234,20 @@
 			var $email = $(".email-field").val();
 			$(".thanks").show()
 			console.log($email)
-			$.ajax({
-	    url: "https://formspree.io/rogelio.vg@icloud.com",
-	    method: "POST",
-	    data: {subscriber: $email},
-	    dataType: "json"
-			});
-
-			$(".email-field").val("")
+			ajaxEmail();
 		})
 
   });
+
+	function ajaxEmail(){
+		$.ajax({
+		url: "https://formspree.io/rogelio.vg@icloud.com",
+		method: "POST",
+		data: {subscriber: $email},
+		dataType: "json"
+		});
+		$(".email-field").val("")
+	}
 </script>
 
 </body>
