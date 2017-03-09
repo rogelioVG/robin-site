@@ -197,18 +197,23 @@
 
 <script type="text/javascript">
 
-var $email = $(".email-field").val();
-
-debugger;
 
 function funcion1(event){
-	debugger;
 
 	event.preventDefault();
-	ajaxEmail();
+	var $email = $(".email-field").val();
+	$.ajax({
+	url: "https://formspree.io/rogelio.vg@icloud.com",
+	method: "POST",
+	data: {subscriber: $email},
+	dataType: "json"
+	});
+	$(".email-field").val("")
 }
 
 	$(document).ready(function(){
+
+		var $email = $(".email-field").val();
 
 		//prevent default
 
@@ -239,14 +244,24 @@ function funcion1(event){
 		$(".sub-button").on("click", function(){
 			console.log("ajax call")
 			$(".thanks").show()
+
+			var $email = $(".email-field").val();
 			console.log($email)
-			ajaxEmail();
+			$.ajax({
+				url: "https://formspree.io/rogelio.vg@icloud.com",
+				method: "POST",
+				data: {subscriber: $email},
+				dataType: "json"
+			});
+
+			$(".email-field").val("")
 		})
 
 
   });
 
 	function ajaxEmail(){
+		var $email = $(".email-field").val();
 		$.ajax({
 		url: "https://formspree.io/rogelio.vg@icloud.com",
 		method: "POST",
