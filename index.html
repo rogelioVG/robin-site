@@ -197,14 +197,21 @@
 
 <script type="text/javascript">
 
+var $email = $(".email-field").val();
+
+debugger;
+
 function funcion1(event){
+	debugger;
 
 	event.preventDefault();
 	ajaxEmail();
 }
 
 	$(document).ready(function(){
+
 		//prevent default
+
 
 		$(".thanks").hide()
     $(window).scroll(function() { // check if scroll event happened
@@ -231,11 +238,11 @@ function funcion1(event){
 
 		$(".sub-button").on("click", function(){
 			console.log("ajax call")
-			var $email = $(".email-field").val();
 			$(".thanks").show()
 			console.log($email)
 			ajaxEmail();
 		})
+
 
   });
 
@@ -248,6 +255,8 @@ function funcion1(event){
 		});
 		$(".email-field").val("")
 	}
+
+
 </script>
 
 </body>
