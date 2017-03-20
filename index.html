@@ -260,7 +260,11 @@ function funcion1(event){
 				$(".get-robin").addClass("orange-button");
 				}
 			else {
-	      $(".nav").css("background-color", "transparent"); // if not, change it back to transparent
+
+	      $(".nav").css("background-color", "transparent");
+				if (document.documentElement.clientWidth > 720) {
+					$(".nav").css("background-color", "#EF5333");
+				}
 				$("#menu").css("color", "white");
 				$('.menu-logo').attr('src','assets/robin-logo-white.png');
 				$(".get-robin").removeClass("orange-button");

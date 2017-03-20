@@ -340,7 +340,7 @@
     position: fixed;
     width: 100%;
     z-index: 3;
-    background-color: #EF5333
+    background-color: -webkit-linear-gradient(left, #EF5333 , #FB2C55)
   }
 
   .menu-logo {
@@ -611,4 +611,105 @@
       /* background: linear-gradient( rgba(239, 83, 51, 0.35), rgba(251, 44, 85, 0.35)), url("../assets/pexels-photo.jpeg");
      */
   }
+
+  @media screen and (min-width: 1700px){
+    .account-image {
+      width: 340px;
+      margin-left: 180px;
+      margin-top: 200px;
+      margin-right: 50px;
+    }
+
+    #top-container{
+      margin-left: 100px;
+    }
+
+    .menu-logo {
+      height: 100px;
+      padding-left: 45px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    ul#menu {
+      opacity: 1;
+      font-size: 1.5em;
+      color: white;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    ul#menu li {
+      float:right;
+      padding: 20px;
+    }
+
+    ul#menu li:hover, ul#menu li.selected{
+      color: navy;
+      cursor: pointer;
+    }
+
+    .orange-button {
+      background-color: #EF5333;
+      border: 0;
+      border-radius: 25px;
+      color: white;
+      font-size: 1em;
+      margin-right: 40px;
+    }
+
+    .white-button {
+      background-color: white;
+      border: 0;
+      border-radius: 25px;
+      color: navy;
+      font-size: 1em;
+      margin-right: 40px;
+    }
+
+    .detail-column{
+      vertical-align: top;
+      display: table-cell;
+      text-align: left;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 65px;
+      width: 1000;
+      color: white;
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
+    .left-iphone-image {
+      width: 340px;
+      margin-left: 350px;
+      margin-top: 50px;
+      display: block;
+    }
+    .right-iphone-image {
+      width: 340px;
+      margin-right: 350px;
+      margin-top: 50px;
+      display: block;
+    }
+
+    .first-column{
+      margin-right: 400px;
+      margin-top: 300px;
+    }
+    .slogan{
+      margin-right: 400px;
+      padding-right: 200px;
+    }
+    .product-description{
+      margin-right: 350px;
+    }
+
+    h1{
+      font-size: 5em;
+      font-weight: bold;
+    }
+
+  }
+
 }
