@@ -1,16 +1,13 @@
 
 
-@media screen and (min-width: 20px) and (max-width: 720px){
+@media screen and (min-width: 30px) and (max-width: 720px){
 
   .nav {
     position: fixed;
     width: 100%;
     z-index: 3;
-    height:
 
   }
-
-
 
   .menu-logo {
     height: 60px;
@@ -123,6 +120,7 @@
     margin-right: 5px;
     border-style: solid;
     border-color: lightgray;
+    margin-bottom: 10px;
 
   }
   .appstore-btn {
@@ -272,6 +270,64 @@
 
 
   }
+}
+
+@media screen and (min-width: 30px) and (max-width: 375px) {
+  .menu-logo {
+    height: 60px;
+    vertical-align: center;
+    padding-left: 15px;
+  }
+
+  ul#menu {
+    opacity: 1;
+    font-size: 1em;
+    color: white;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  ul#menu li {
+    float:right;
+    padding-right: 15px;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+
+  .contact-li {
+    display: none;
+  }
+
+  .feat {
+    color: blue;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .slogan {
+    color: white;
+  }
+  .product-description{
+    font-size: 1.5em;
+  }
+  .appstore-btn {
+    margin-left: 75px;
+
+  }
+  h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+  }
+  h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
 }
 
 
