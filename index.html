@@ -11,20 +11,22 @@
 	<script type="text/javascript" src="js/script.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
-	<!-- Optional theme -->
+	<!-- Optional theme "location.href='index.html';" -->
 
 	<!-- Latest compiled and minified JavaScript -->
 </head>
 
 <body>
+
 	<table class="nav">
-  <tr>
-    <th>
+ 		<tr>
+    	<th>
 			<span class="logo">
-				<img onclick="location.href='index.html';"src="assets/robin-logo-white.png" alt="Robin" class="menu-logo">
+
+				<img onclick="location.href='index.html';" src="assets/robin-logo-white.png" alt="Robin" class="menu-logo">
 			</span>
 		</th>
-    <th>
+    	<th>
 			<ul id="menu">
 				<li><input onclick="location.href='https://itunes.apple.com/mx/app/robin-kids-financial-sidekick/id1167266233?l=en&mt=8'" class="get-robin btn btn-info round white-button" type="button" value="Get Robin"></li>
 		  	<li onclick="location.href='https://medium.com/robinapp';">Blog</li>
@@ -35,9 +37,10 @@
 
 			</ul>
 	 	</th>
-  </tr>
+  		</tr>
 	</table>
 
+<div class="photo-layer">
 <div id="top-container">
 	<table class="landing">
 		<tr>
@@ -62,11 +65,11 @@
 					<p class="thanks">
 						Thanks! We'll send you more info shortly 😃
 					</p>
+					<br><br>
+
 				</form>
 				<br>
 				<span>
-
-
 							<a href="https://itunes.apple.com/mx/app/robin-kids-financial-sidekick/id1167266233?l=en&mt=8">
 								<img class="appstore-btn" src="assets/appstore.png">
 							</a>
@@ -79,8 +82,8 @@
 				</span>
 
 			</th>
-			<th>
-				<span class="product-showcase">
+			<th class="product-showcase">
+				<span>
 					<img class= "account-image" src="assets/account-iphone.png">
 				</span>
 			</th>
@@ -89,9 +92,19 @@
 
 	</table>
 
-
+</div>
 </div>
 <div id="save-container">
+
+	<span class="feat feat-mobile">
+		<h2> Save and follow your goals</h2>
+		<br>
+		We turn products into saving goals. Kids can start saving little by little and all the family is able to see their progress.
+	</span>
+
+	<br>
+
+	<img class="center-iphone-image" src="assets/goals-iphone.png">
 
 	<table>
 		<td>
@@ -108,6 +121,15 @@
 
 <div id="shop-container">
 
+	<span class="feat feat-mobile">
+		<h2> Independence in a safe playground</h2>
+		<br>
+		The most secure way for young people to buy online, wihtout giving a card or personal information to the retailer.
+	</span>
+	<br>
+
+	<img class="center-iphone-image" src="assets/shop-iphone.png">
+
 	<table>
 
 		<td class="detail-column">
@@ -116,7 +138,7 @@
 			The most secure way for young people to buy online, wihtout giving a card or personal information to the retailer.
 		</td>
 
-		<td>
+		<td class="feat-image">
 			<img class="right-iphone-image" src="assets/shop-iphone.png">
 		</td>
 
@@ -124,6 +146,15 @@
 </div>
 
 <div id="task-container">
+
+	<span class="feat feat-mobile">
+		<h2> Learn the value of money </h2>
+		<br>
+		Parents can assign chores so kids start to earn some extra money for their actions.
+	</span>
+	<br>
+
+	<img class="center-iphone-image" src="assets/tasks-iphone.png">
 
 	<table>
 
@@ -179,7 +210,7 @@
 
 	<br>
 	<br>
-	<table class="social">
+	<table class="social" align="center">
   <tr>
     <td> <a href="https://www.facebook.com/app.robin/"> <img class="social-image" src="assets/facebook.png"></a></td>
     <td> <a href="https://twitter.com/get_robin"> <img class="social-image" src="assets/twitter.png"></a></td>
@@ -227,7 +258,7 @@ function funcion1(event){
 				$(".get-robin").addClass("orange-button");
 				}
 			else {
-	      $(".nav").css("background-color", "transparent"); // if not, change it back to transparent
+	      $(".nav").css("background-color", "#EF5333"); // if not, change it back to transparent
 				$("#menu").css("color", "white");
 				$('.menu-logo').attr('src','assets/robin-logo-white.png');
 				$(".get-robin").removeClass("orange-button");
@@ -269,6 +300,10 @@ function funcion1(event){
 		dataType: "json"
 		});
 		$(".email-field").val("")
+	}
+
+	function extendNav() {
+			$('.nav').addClass("nav-extended");
 	}
 
 

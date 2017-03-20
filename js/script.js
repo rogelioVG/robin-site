@@ -3,7 +3,8 @@
 
 $(document).ready(function() {
 
-  $('#thankyouBlock').hide();
+
+    $('#thankyouBlock').hide();
 
     $('#someForm').on('submit', function(e) {
         e.preventDefault();
@@ -38,5 +39,7 @@ $(document).ready(function() {
         });
 
     });
+
+
 
 });
