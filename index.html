@@ -3,6 +3,7 @@
 <head>
 	<title>Robin 🐤</title>
 	<meta charset = "UTF-8"/>
+	<meta name="apple-itunes-app" content="app-id=1167266233"/>
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -245,12 +246,12 @@ function funcion1(event){
 
 	$(document).ready(function(){
 
-		var $email = $(".email-field").val();
 
-		//prevent default
+		var $email = $(".email-field").val();
 
 
 		$(".thanks").hide()
+
     $(window).scroll(function() { // check if scroll event happened
       if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
         $(".nav").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
@@ -259,7 +260,7 @@ function funcion1(event){
 				$(".get-robin").addClass("orange-button");
 				}
 			else {
-	      $(".nav").css("background-color", "#EF5333"); // if not, change it back to transparent
+	      $(".nav").css("background-color", "transparent"); // if not, change it back to transparent
 				$("#menu").css("color", "white");
 				$('.menu-logo').attr('src','assets/robin-logo-white.png');
 				$(".get-robin").removeClass("orange-button");
@@ -301,10 +302,6 @@ function funcion1(event){
 		dataType: "json"
 		});
 		$(".email-field").val("")
-	}
-
-	function extendNav() {
-			$('.nav').addClass("nav-extended");
 	}
 
 
