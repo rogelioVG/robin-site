@@ -6,13 +6,12 @@
     position: fixed;
     width: 100%;
     z-index: 3;
-
   }
 
   .menu-logo {
     height: 60px;
-    padding: 10px;
-    padding-left: 45px;
+    padding: 0px;
+    padding-left: 15px;
   }
 
   .account-image {
@@ -60,7 +59,8 @@
 
   ul#menu li {
     float:right;
-    padding: 20px;
+    padding: 5px;
+    margin-top: 30px;
   }
 
   ul#menu li:hover, ul#menu li.selected{
@@ -166,7 +166,7 @@
     }
 
     .orange-button {
-      background-color: #EF5333;
+      background-color: #FF4D38;
       border: 0;
       border-radius: 25px;
       color: white;
@@ -263,10 +263,10 @@
     z-index: 0;
 
     background: #EF5333; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #EF5333 , #FB2C55); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #EF5333 , #FB2C55); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #EF5333 , #FB2C55); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #EF5333 , #FB2C55); /* Standard syntax */
+    background: -webkit-linear-gradient(left, #FF4D38 , #FB2C55); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #FF4D38 , #FB2C55); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #FF4D38 , #FB2C55); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #FF4D38 , #FB2C55); /* Standard syntax */
 
 
   }
@@ -340,7 +340,7 @@
     position: fixed;
     width: 100%;
     z-index: 3;
-    background-color: -webkit-linear-gradient(left, #EF5333 , #FB2C55)
+    background-color: -webkit-linear-gradient(left, #FF4D38 , #FB2C55)
   }
 
   .menu-logo {
@@ -499,7 +499,7 @@
     }
 
     .orange-button {
-      background-color: #EF5333;
+      background-color: #FF4D38;
       border: 0;
       border-radius: 25px;
       color: white;
@@ -596,10 +596,10 @@
     background-image: url("https://static.pexels.com/photos/8986/pexels-photo.jpeg"); /* For browsers that do not support gradients */
     background-image: url("../assets/bg-image.png");
     background-size:contain;
-    background-color: -webkit-linear-gradient(left, #EF5333 , #FB2C55) ; /* For Safari 5.1 to 6.0 */
-    background-color: -o-linear-gradient(right, #EF5333 , #FB2C55);  /*For Opera 11.1 to 12.0 */
-    background-color: -moz-linear-gradient(right, #EF5333 , #FB2C55); /* For Firefox 3.6 to 15 */
-    background-color: linear-gradient(to right, #EF5333 , #FB2C55); /* Standard syntax
+    background-color: -webkit-linear-gradient(left, #FF4D38 , #FB2C55) ; /* For Safari 5.1 to 6.0 */
+    background-color: -o-linear-gradient(right, #FF4D38 , #FB2C55);  /*For Opera 11.1 to 12.0 */
+    background-color: -moz-linear-gradient(right, #FF4D38 , #FB2C55); /* For Firefox 3.6 to 15 */
+    background-color: linear-gradient(to right, #FF4D38 , #FB2C55); /* Standard syntax
 
     background-color:
     /* top, transparent red
@@ -650,7 +650,7 @@
     }
 
     .orange-button {
-      background-color: #EF5333;
+      background-color: #FF4D38;
       border: 0;
       border-radius: 25px;
       color: white;
