@@ -62,7 +62,7 @@ $(document).ready(function() {
     });
 
     $('.del').on("click", function(){
-      amount = 0;
+      amount = "";
       $('.amount').html("$0.0");
       // if (amount.length > 1){
       //   amount = amount.slice(0, -1);
