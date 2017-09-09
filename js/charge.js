@@ -62,15 +62,16 @@ $(document).ready(function() {
     });
 
     $('.del').on("click", function(){
-      if (amount.length > 1){
-        amount = amount.slice(0, -1);
-        $('.amount').html("$"+amount);
-      }
-      else {
-        amount = amount.slice(0, -1);
-        $('.amount').html("$0.0");
-        console.log(amount)
-      }
+      amount = 0;
+      $('.amount').html("$0.0");
+      // if (amount.length > 1){
+      //   amount = amount.slice(0, -1);
+      //   $('.amount').html("$"+amount);
+      // }
+      // else {
+      //   amount = amount.slice(0, -1);
+      //   $('.amount').html("$0.0");
+      // }
 
     });
 

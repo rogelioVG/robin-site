@@ -23,20 +23,6 @@ img {
 }
 
 
-
-.btn:hover {
-  background: #3DD87F;
-}
-
-.btn-blue {
-  background: #0DC0FF;
-}
-
-.btn-green {
-  background: #3DD87F;
-}
-
-
 ::-webkit-input-placeholder {
     color: navy;
     opacity: 1 !important; /* for older chrome versions. may no longer apply. */
@@ -92,6 +78,15 @@ p{
 
 input {
 text-align: center;
+}
+
+
+.btn:hover {
+  background: #0DC0FF;
+}
+
+.charge:hover {
+  background: #18D37E;
 }
 
 
