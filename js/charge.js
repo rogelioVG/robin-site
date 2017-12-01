@@ -89,7 +89,8 @@ $(document).ready(function() {
       // SEND ORDER POST TO ROBIN TERMINAL
       ////////////////////////////////////
       $.ajax({
-        url: "http://192.168.1.71:5000/charge",
+        //url: "http://192.168.1.71:5000/charge",
+        url: "http://192.168.0.104:8000/charge",
         method: "POST",
         data: {amount: amount},
         dataType: "json",
