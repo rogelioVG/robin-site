@@ -2,6 +2,7 @@
 
 
 
+
 var startup = {greenReturn:30, blueReturn:1, redReturn:0, greenProb: 10, blueProb: 20, redReturn:70, coolDown: 0};
 var terreno = {greenReturn:1.2, blueReturn:1, redReturn:0, greenProb: 40, blueProb: 40, redReturn:20, coolDown: 0};
 var pizza = {greenReturn:1.5, blueReturn:1, redReturn:0, greenProb: 30, blueProb: 10, redReturn:60, coolDown: 0};
@@ -175,3 +176,4 @@ function cetesTurn() {
         $('.cetes-marble').attr("src","assets/green-marble.png");
     }
 }
+
