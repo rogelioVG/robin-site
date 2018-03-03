@@ -24,7 +24,6 @@
   background-color: #fefde5 !important;
 } */
 
-
 #container{
   color: white;
   font-size: 2.5em;
@@ -49,11 +48,15 @@ table {
 
 td {
   margin:20px;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .path-img {
   width: 50%;
+}
+
+.marble-img {
+  width: 30%;
 }
 
 .menu-logo {
@@ -68,5 +71,11 @@ td {
 
 body {
   background-color: rgb(33, 7, 131);
+  font-family: Helvetica, sans-serif;
+  color: white;
   width: 100%;
+}
+
+.rollTurn {
+  font-size: 2em;
 }
