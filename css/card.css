@@ -70,9 +70,10 @@ td {
 }
 
 body {
-  background-color: rgb(33, 7, 131);
+  /*background-color: rgb(33, 7, 131);*/
+  background-color: white;
   font-family: Helvetica, sans-serif;
-  color: white;
+  color: navy;
   width: 100%;
 }
 
