@@ -1,0 +1,33 @@
+
+
+.logo {
+    width: 170px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.cover {
+    width: 250px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Helvetica';
+    font-size: 3em;
+    color:#05147C;
+}
+
+.foot {
+    color: #05147C;
+    font-size: 1em;
+}
+
+p {
+    font-family: 'Helvetica';
+    font-size: 2em;
+    color:#585858;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+}
