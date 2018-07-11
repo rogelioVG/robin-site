@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Robin 🐤 | Kids' Mobile Bank</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/charge.js"></script>
+  <link rel="stylesheet" href="css/charge.css" type='text/css'>
+
+  <script type="text/javascript"> 
+    var amount = ""
+  </script>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+ -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script> -->
+          
+</head>
+
+<body>
+
+<div class="box">
+
+  <center><img class="logo" src="assets/robin-logo.png"></center>
+  
+    
+  
+<!-- 
+  <form class="form">
+    
+    <input class="amount input-field validate mat-div" type="text" name="amount" placeholder="$">
+    <br>
+
+  </form> -->
+
+  <center>
+  <div class="amount"> $0.0</div>
+
+    <input class="one btn round digit-btn" type="button" value="1">
+    <input class="two btn round digit-btn" type="button" value="2">
+    <input class="three btn round digit-btn" type="button" value="3">
+    <input class="four btn round digit-btn" type="button" value="4">
+    <input class="five btn round digit-btn" type="button" value="5">
+    <input class="six btn round digit-btn" type="button" value="6">
+    <input class="seven btn round digit-btn" type="button" value="7">
+    <input class="eight btn round digit-btn" type="button" value="8">
+    <input class="nine btn round digit-btn" type="button" value="9">
+    <input class="dot btn round digit-btn" type="button" value=".">
+    <input class="zero btn round digit-btn" type="button" value="0">
+    <input class="del btn round digit-btn" type="button" value="DEL">
+
+    <input class="charge btn btn-info round" type="button" value="Charge Card">
+  </center>
+
+    <p> <b>1.</b> Input the amount you want to charge</p>
+    <p> <b>2.</b> Click the button to charge amount</p>
+    <p> <b>3.</b> Wait for the kid to tap his/her card on the reader</p>
+</div>
+
+<script type="text/javascript">
+  // $(document).ready(function() {
+
+  //   $('.one').on("click", function(){
+  //     amount += "1";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.two').on("click", function(){
+  //     amount += "2";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.three').on("click", function(){
+  //     amount += "3";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.four').on("click", function(){
+  //     amount += "4";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.five').on("click", function(){
+  //     amount += "5";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.six').on("click", function(){
+  //     amount += "6";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.seven').on("click", function(){
+  //     amount += "7";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.eight').on("click", function(){
+  //     amount += "8";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.nine').on("click", function(){
+  //     amount += "9";
+  //     $('.amount').html("$"+amount);
+  //   });
+
+  //   $('.dot').on("click", function(){
+  //     if (amount.includes(".")){
+  //     }
+  //     else{
+  //       amount += ".";
+  //       $('.amount').html("$"+amount);
+  //     }
+  //   });
+
+  //   $('.zero').on("click", function(){
+  //     if (amount.length > 0) {
+  //       amount += "0";
+  //       $('.amount').html("$"+amount);
+  //     }
+  //   });
+
+  //   $('.del').on("click", function(){
+  //     if (amount.length > 1){
+  //       amount = amount.slice(0, -1);
+  //       $('.amount').html("$"+amount);
+  //     }
+  //     else {
+  //       amount = amount.slice(0, -1);
+  //       $('.amount').html("$0.0");
+  //       console.log(amount)
+  //     }
+
+  //   });
+
+
+
+  //   $('.charge').on("click", function(){
+
+  //     //const $amount = $('.amount').val();
+
+  //     // const $amount = 0
+
+  //     $('.charge').prop('disabled', true);
+
+  //     ////////////////////////////////////
+  //     // SEND ORDER POST TO ROBIN TERMINAL
+  //     ////////////////////////////////////
+  //     $.ajax({
+  //       url: "http://192.168.1.71:5000/charge",
+  //       method: "POST",
+  //       data: {amount: amount},
+  //       dataType: "json",
+  //       success:function(response) {
+  //         console.log(response);
+  //         alert(response);
+  //         $('.charge').prop('disabled', false);
+  //       },
+  //       error: function(){
+  //         alert("Connection Failed :(");
+  //         $('.charge').prop('disabled', false);
+  //       }
+  //     });
+  //   });
+  // });
+
+</script>
+
+</body>
+
+</html>
